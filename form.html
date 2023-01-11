@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="job.css">
+    <script src="https://kit.fontawesome.com/ba55640131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="employee">
+    <h1>QUICK JOB <i class="fa-sharp fa-solid fa-user-tie"></i></h1>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn1"></div>
+            <button type="button" class="toggle-btn" onclick="applicant()">Applicant</button>
+            <button type="button" class="toggle-btn"onclick="employer()">Employer</button>
+        </div>
+        <form class="input-group"id="applicant">
+            <input type="text" class="input-field" placeholder="First Name" required>
+            <input type="text" class="input-field" placeholder="Last Name" required>
+            <input type="tel" class="input-field" placeholder="Mobile Number" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Create password" required>
+            <input type="checkbox" class="check-box"><span>I agree with term and conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <form class="input-group"id="employer">
+            <input type="text" class="input-field" placeholder="Organization Name" required>
+            <input type="text" class="input-field" placeholder="ISO Certificate No." required>
+            <input type="tel" class="input-field" placeholder="Telephone Number" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Create password" required>
+            <input type="checkbox" class="check-box"><span>We agree with term and conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+   <script>
+    var x=document.getElementById("applicant");
+    var y=document.getElementById("employer");
+    var z=document.getElementById("btn1");
+    function employer(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";}
+        function applicant(){
+        x.style.left="55px";
+        y.style.left="450px";
+        z.style.left="0px";}
+   </script>
+</body>
+</html>

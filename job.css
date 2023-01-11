@@ -1,0 +1,411 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Poppins',sans-serif;
+ box-sizing: border-box;    
+} 
+body{
+    width: 100%;
+    height: auto;
+}
+#header{
+    width:100%;
+    height: 400px;
+    background-image:url(IT.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 10px;  
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    font-size: larger;
+    color: white;
+}
+nav ul li a::after{
+    content: '' ;
+    width: 0;
+    height: 3px;
+    background:midnightblue;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;  
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.container h1{
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.container p{
+    padding-left: 40px;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: xx-large;
+    color:white;
+}
+.container p span{
+    color: midnightblue;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-bar form{
+    width:600px;
+    height: 55px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    box-shadow: 0 5px 10px 0 gray;
+}
+.search-bar form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-weight: 400;
+
+}
+.search-bar form button{
+    background: midnightblue;
+    margin: -10px,-10px;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color:white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.search-bar form i{
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.filter{
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.filter-drop{
+    width:100;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-right: 10px;
+}
+.company h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background:midnightblue;
+}
+.logo1{
+    margin: 10px;
+    display: flex;
+    justify-content:space-between;
+    background: whitesmoke;
+}
+.logo1 img{
+    padding: 10px;
+    margin-top: 15px;
+    border:3px solid midnightblue;
+    border-radius: 10px; 
+}
+.logo2{
+    margin: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+.logo2 img{
+    padding: 10px;
+    margin-top: 15px;
+    border:3px solid midnightblue;
+    border-radius: 10px; 
+}
+.logo3{
+    margin: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+.logo3 img{
+    padding: 10px;
+    margin-top: 15px;
+    border:3px solid midnightblue;
+    border-radius: 10px; }
+.btn{
+   display: block; 
+   margin: 30px auto;
+   width: fit-content;
+   border: 3px solid midnightblue;
+   padding: 14px 50px;
+   border-radius: 10px;
+   text-decoration: none;
+   color: midnightblue;
+   font-size: 15px;
+   font-weight: 600;
+
+}
+.sign h1{
+    color:white;
+    font-weight: 800;
+    padding: 10px;
+}
+.sign::before{
+    content: "";
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.login{
+    width: 300px;
+    background: whitesmoke;
+    padding:20px;
+    margin:1.5% auto 0 ;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 gray;
+    opacity: 70%;
+}
+.login h2{
+    margin-bottom: 20px;
+    color:midnightblue;
+    font-weight:800
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid;
+    outline:none;
+}
+.login button{
+    color: white;
+    width:100%;
+    margin:10px 0;
+    padding: 10px;
+    font-size:15px;
+    font-weight: 500;
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.login-btn{
+    background-color:midnightblue;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+    padding:2px;
+}
+hr{
+    margin-top: 20px;
+    width:100%;
+}
+.or{
+    background:whitesmoke;
+    width:30px;
+    margin: -12px auto 10px;
+}
+.login i{
+    padding:10px;
+    background:midnightblue;
+    border-radius: 100px;
+    color: white;
+    width:50px;
+}
+.tc{
+    margin-top: 20px;
+    padding: 8px;
+}
+.tc p{
+    font-weight: 300;
+    color: white;
+}
+.domain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:20px;
+    padding: 20px;
+}
+.domain div{
+    background:rgb(219, 218, 218);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    background:url('wave line.svg');
+    transition: transform 0.5s;
+}
+.domain div:hover{
+    transform: translate(0,-10px);
+}
+.domain div i{
+    font-size: 40px;
+}
+.domain div a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size:15px;
+    color: white;
+
+}
+.about{
+    background:url('bg.svg');
+    padding:10px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:70px;
+}
+.about div a{
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.app{
+    border: 3px solid white; 
+    text-align:center;
+    padding:auto;
+    border-radius: 10px;
+}
+.app i{
+    font-size:30px;
+    padding: 10px;
+}
+.employee{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('work.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width:380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: white;
+    opacity: 75%;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.button-box{
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px gray;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn1{
+    top:0;
+    left:0;
+    position:absolute;
+    width:110px;
+    height:100%;
+    background: turquoise;
+    border-radius:30px;
+    transition: 0.5s;
+}
+.input-group{
+    position:absolute ;
+    width: 280px;
+    transition: 0.5s;
+}
+.input-field{
+    width:100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid gray;
+}
+.submit-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: turquoise;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0 ;
+    cursor: pointer;
+}
+.form-box span{
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#applicant{
+    left:50px;
+}
+#employer{
+    left:450px;
+}
+.employee h1{
+    color:white;
+    font-weight: 800;
+}
+
+.post{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('occupation.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat:repeat-y;
+    position: absolute;
+}
+.post-form{
+    width:400px;
+    height:500px;
+    position: right;
+    margin-top:10px;
+    margin-left:700px;
+    background: black;
+    opacity: 70%;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.post h1{
+    color:midnightblue;
+    font-weight: 800;
+}
