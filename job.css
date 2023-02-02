@@ -115,7 +115,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    background:midnightblue;
+    background:url('./images/Animated Shape (1).svg');
 }
 .logo1{
     margin: 10px;
@@ -148,15 +148,16 @@ nav ul li a:hover::after{
 .logo3 img{
     padding: 10px;
     margin-top: 15px;
+    border-radius: 10px;
     border:3px solid midnightblue;
-    border-radius: 10px; }
+ }
 .btn{
    display: block; 
-   margin: 30px auto;
+   margin: 20px auto;
    width: fit-content;
    border: 3px solid midnightblue;
    padding: 14px 50px;
-   border-radius: 10px;
+   border-radius: 15px;
    text-decoration: none;
    color: midnightblue;
    font-size: 15px;
@@ -170,24 +171,23 @@ nav ul li a:hover::after{
 }
 .sign::before{
     content: "";
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/background.jpg') no-repeat center center/cover;
+    background:url('./images/illu5.jpg') no-repeat center center/cover;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
 .login{
-    width: 300px;
     background: whitesmoke;
+    width: 300px;
     padding:20px;
     margin:1.5% auto 0 ;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 5px 10px 0 gray;
-    opacity: 70%;
 }
-.login h2{
-    margin-bottom: 20px;
+.login h3{
+    margin-bottom:15px;
     color:midnightblue;
     font-weight:800
 }
@@ -300,7 +300,7 @@ hr{
 .employee{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/work.jpg');
+    background-image:url('./images/flat-mountains.svg');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -311,7 +311,6 @@ hr{
     position: relative;
     margin: 2% auto;
     background: white;
-    opacity: 75%;
     padding: 5px;
     overflow: hidden;
     border-radius: 30px;
@@ -337,7 +336,7 @@ hr{
     position:absolute;
     width:110px;
     height:100%;
-    background: turquoise;
+    background:turquoise;
     border-radius:30px;
     transition: 0.5s;
 }
@@ -361,7 +360,7 @@ hr{
     cursor: pointer;
     display: block;
     margin: auto;
-    background: turquoise;
+    background:turquoise;
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -385,7 +384,6 @@ hr{
     color:white;
     font-weight: 800;
 }
-
 .post{
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./images/occupation.jpg');
     height: 100%;
@@ -394,18 +392,162 @@ hr{
     position: absolute;
 }
 .post-form{
-    width:400px;
+    width:350px;
     height:500px;
     position: right;
     margin-top:10px;
     margin-left:700px;
-    background: black;
-    opacity: 70%;
+    background:white;
+    opacity: 60%;
     padding: 5px;
-    overflow: hidden;
     border-radius: 20px;
+    border: 3px solid midnightblue;
 }
 .post h1{
     color:midnightblue;
     font-weight: 800;
+}
+.hire{
+    position:absolute;
+    width: 280px;
+    
+}
+.hire-entry{
+    width:100%;
+    padding: 10px 0;
+    margin: 10px 10px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid gray;   
+}
+.post-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 40px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    border: 3px solid midnightblue;
+}
+.description{
+    border-radius: 5px;
+    margin:2px 5px;
+}
+.blog{
+    width:100%;
+    height:100%;
+    text-align: center;
+    padding: 5px 1px;
+}
+.blog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 1px;
+}
+.blog-card{
+    width:280px;
+    height:auto;
+    margin: 1rem;
+    box-shadow: 0 1px 6px 0 rgba(49 53 59 / 12%); 
+    cursor: pointer;
+}
+.blog-image{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.blog-detail{
+    padding:20px;
+}
+.blog-detail span{
+    color: var(--yellowColor) ;
+    font-size:14px;
+}
+.blog-card h4{
+    padding:10px 0 ;
+}
+.divider{
+    margin: 1rem 0;
+    border: 1px solid var(--grayColor);
+}
+.blog-more{
+    color:var(--primaryColor);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.blog-card:hover{
+    
+    box-shadow: 5px 10px 20px #888888;
+}
+.job-list{
+    margin:10px 20px;
+    padding: 3rem;
+}
+.job-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    min-height: 100px;
+    align-items: center;
+    background-color:var(--whiteColor) ;
+    box-shadow:rgba(0,0,0,0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+.job-card:hover{
+   box-shadow:rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.job-name{
+    display:flex;
+}
+.profile{
+    width:60px;
+    height: 60px;
+    margin: 0.5rem;
+}
+.job-detail{
+    padding: 0 10px;   
+}
+.job-detail h4{
+    color: midnightblue;
+    font-size: 14px;
+}
+.job-label{
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-label a{
+    padding: 5px 1rem;
+    margin: 0.2rem;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    transition: transform 0.5s;
+}
+.job-label a:hover{
+    transform: translate(0,-5px);
+}
+.label-a{
+    background-color:crimson;
+}
+.label-b{
+    background-color:coral;
+}
+.job-copyright{
+    margin-top: 20px;
+    width:100%;
+    text-align: center;
+    padding: 30px;
+    color:white;
+    background:midnightblue;
+    font-size:20px;
+}
+#resume{
+    
 }
